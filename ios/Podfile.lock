@@ -1910,10 +1910,12 @@ PODS:
     - ExpoModulesCore
   - ExpoModulesCore (0.3.2):
     - React-Core
+    - ReactCommon/turbomodule/core
   - ExpoModulesCore/Tests (0.3.2):
     - Nimble
     - Quick
     - React-Core
+    - ReactCommon/turbomodule/core
   - EXPrint (10.2.0):
     - ExpoModulesCore
   - EXRandom (11.2.0):
@@ -4153,7 +4155,7 @@ SPEC CHECKSUMS:
   EXNotifications: 238aa36d5f5257cfa050f4879d522f01b6e7bed7
   EXPermissions: ab620a6dfb5590800e573f790397c9c4dbc4f6f4
   Expo: 232b64d069e9605f39ae795fdf36a0c91ec151aa
-  ExpoModulesCore: 8877484ffd559d5ffe4860d2767c4087ec096a28
+  ExpoModulesCore: 300d4f67acbfe06fee67d3d2b32c3b55eeef13d3
   EXPrint: 7428428852f60bf5fd855f0b2374c5831099e3fb
   EXRandom: 369dffcbe5ec8fc8d18b6e7cc233560f03cc88d1
   EXScreenCapture: 9c78fd8005297872353ebc0185fae13eac612898
@@ -4236,7 +4238,7 @@ SPEC CHECKSUMS:
   React-RCTText: 41a2e952dd9adc5caf6fb68ed46b275194d5da5f
   React-RCTVibration: 24600e3b1aaa77126989bc58b6747509a1ba14f3
   React-runtimeexecutor: a9904c6d0218fb9f8b19d6dd88607225927668f9
-  ReactCommon: 149906e01aa51142707a10665185db879898e966
+  ReactCommon: d61821e0023d44a67e0d95103d590d52eaac8d2b
   RNReanimated: 9c13c86454bfd54dab7505c1a054470bfecd2563
   RNScreens: 2a71d74b4e530f051f5684c8111d7591176722cf
   Stripe: 57c6997c64042a3f5aedae9b76e331942f8b75d2

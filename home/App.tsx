@@ -17,6 +17,19 @@ if (Platform.OS === 'android') {
 }
 SplashScreen.preventAutoHideAsync();
 
+async function callMethodAsync(...args) {
+  return new Promise((resolve, reject) => {
+    global.ExpoModules.callMethodAsync(...args, (result, error) => {
+      error == null ? resolve(result) : reject(error);
+    });
+  });
+}
+
+(async function () {
+  console.log('call 0:', await callMethodAsync('test 0'));
+  console.log('call 1:', await callMethodAsync('test 1'));
+})();
+
 export default function App() {
   return (
     <AppearanceProvider>

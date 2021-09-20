@@ -8,6 +8,8 @@ const exportedMethodsKey = 'exportedMethods';
 
 const NativeModulesProxy: { [moduleName: string]: ProxyNativeModule } = {};
 
+console.log('DUPA');
+
 if (NativeProxy) {
   Object.keys(NativeProxy[exportedMethodsKey]).forEach((moduleName) => {
     NativeModulesProxy[moduleName] = NativeProxy[modulesConstantsKey][moduleName] || {};
