@@ -51,19 +51,19 @@ const withImagePicker: ConfigPlugin<{
   if (!config.ios.infoPlist) config.ios.infoPlist = {};
   config.ios.infoPlist.NSPhotoLibraryUsageDescription =
     photosPermission || config.ios.infoPlist.NSPhotoLibraryUsageDescription || READ_PHOTOS_USAGE;
-  config.ios.infoPlist.NSCameraUsageDescription =
-    cameraPermission || config.ios.infoPlist.NSCameraUsageDescription || CAMERA_USAGE;
-  config.ios.infoPlist.NSMicrophoneUsageDescription =
-    microphonePermission || config.ios.infoPlist.NSMicrophoneUsageDescription || MICROPHONE_USAGE;
+//   config.ios.infoPlist.NSCameraUsageDescription =
+//     cameraPermission || config.ios.infoPlist.NSCameraUsageDescription || CAMERA_USAGE;
+//   config.ios.infoPlist.NSMicrophoneUsageDescription =
+//     microphonePermission || config.ios.infoPlist.NSMicrophoneUsageDescription || MICROPHONE_USAGE;
 
   return withPlugins(config, [
     [
       AndroidConfig.Permissions.withPermissions,
       [
-        'android.permission.CAMERA',
+//         'android.permission.CAMERA',
         'android.permission.READ_EXTERNAL_STORAGE',
         'android.permission.WRITE_EXTERNAL_STORAGE',
-        'android.permission.RECORD_AUDIO',
+//         'android.permission.RECORD_AUDIO',
       ],
     ],
     withImagePickerManifestActivity,
